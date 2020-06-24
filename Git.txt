@@ -5,4 +5,7 @@ git commit - закомитить
 git log - история коммитов
 git log --pretty=oneline - в олдну линию каждый коммит
 git log ---pretty=format:"%h - %s : %ad [ %an ]" - собственный формат
+--date=short - короткий формат даты
+git checkout <hash> - смена ветки
+gitk - графический интерфейс
 
