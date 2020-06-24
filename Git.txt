@@ -32,3 +32,4 @@ git commit -m "some comment"
 git revert --abort  - отмена попытки удаления (при конфликте)
 git branch - посомтреть все ветки в локальном репозитории
 git checkout -b newbrabch - создание новой ветки с названием newbranch
+ls - показывает все файлы в ветке
