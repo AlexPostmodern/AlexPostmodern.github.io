@@ -1,7 +1,14 @@
-h1{
-  background-color: red;
+body{
+  padding: 0px;
+  margin: 0px;
+  font-family: Arial, sans-serif;
 }
 
-.ex{
-  background-color: green;
+header{
+  background: url(../img/first-bg.jpg) no-repeat center top / cover;
+  height: 600px;
+}
+
+.logo{
+  
 }
