@@ -6,13 +6,107 @@ body{
 
 header{
   background: url(../img/first-bg.jpg) no-repeat center top / cover;
-  height: 600px;
+  padding-bottom: 180px;
 }
+
+
+
+.cirсle{
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  position: relative;
+  opacity: 1;
+  animation-duration: 6s;
+  animation-delay: 2s;
+  animation-iteration-count: 10;
+  animation-name: loading;
+  background-color: rebeccapurple;
+}
+
 .container{
-    width: 930px;
-    border: firebrick solid rebeccapurple;
+  width: 930px;
+  margin: 0 auto;
+}
+
+@keyframes loading{
+  0%{opacity: 0.9;}
+  25%{opacity: 0.6; width: 100px;height: 100px;}
+  50%{opacity: 0.3; width: 150px;height: 150px;}
+  100%{opacity: 0; width: 100px;height: 100px;}
+}
+
+@-webkit-keyframes loading{
+  0%{opacity: 0.9;}
+  25%{opacity: 0.6; width: 100px;height: 100px;}
+  50%{opacity: 0.3; width: 150px;height: 150px;}
+  100%{opacity: 0; width: 100px;height: 100px;}
+}
+
+nav{
+  float: right;
+  margin-top: 50px;
 }
 
 .logo{
-  
+  margin-top: 50px;
+  float: left;
+}
+
+.menu{
+padding: 0px;
+margin: 0px;
+display: block;
+}
+
+.menu li{
+  float: left;
+  display: block;
+  margin-right: 40px;
+}
+
+.menu li a{
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.clearfix:after{
+  content: '';
+  display: table;
+  width: 100%;
+  clear: both;
+}
+
+.caption_first{
+  font-size: 40px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 180px;
+}
+
+h1{
+  font-size: 75px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 15px;
+}
+
+.button{
+  background: #fed136;
+  color: #484543;
+  border-radius: 3px;
+  display: block;
+  width:240px;
+  padding: 20px 0;
+  margin: 0 auto;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 50px;
 }
