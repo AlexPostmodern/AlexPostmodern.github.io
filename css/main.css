@@ -10,9 +10,9 @@ header{
 }
 .container{
     width: 930px;
-    
+    border: firebrick solid rebeccapurple;
 }
 
 .logo{
-  color: #5b8886;
+  
 }
