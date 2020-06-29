@@ -8,7 +8,11 @@ header{
   background: url(../img/first-bg.jpg) no-repeat center top / cover;
   height: 600px;
 }
+.container{
+    width: 930px;
+    
+}
 
 .logo{
-  
+  color: #5b8886;
 }
