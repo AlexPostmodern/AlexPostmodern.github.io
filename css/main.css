@@ -1,93 +1,29 @@
-body{
+@charset "UTF-8";
+body {
   padding: 0px;
   margin: 0px;
   font-family: Arial, sans-serif;
   color: #222;
 }
 
-header{
-  background: url(../img/space3.jpg) no-repeat center top / cover;
+header {
+  background: url(../img/space3.jpg) no-repeat center top/cover;
   padding-bottom: 50px;
 }
 
-.cirсle{
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-  position: relative;
-  opacity: 1;
-  animation-duration: 6s;
-  animation-delay: 2s;
-  animation-iteration-count: 10;
-  animation-name: loading;
-  background-color: rebeccapurple;
-}
-
-.container{
-  width: 930px;
-  margin: 0 auto;
-}
-
-@keyframes loading{
-  0%{opacity: 0.9;}
-  25%{opacity: 0.6; width: 100px;height: 100px;}
-  50%{opacity: 0.3; width: 150px;height: 150px;}
-  100%{opacity: 0; width: 100px;height: 100px;}
-}
-
-@-webkit-keyframes loading{
-  0%{opacity: 0.9;}
-  25%{opacity: 0.6; width: 100px;height: 100px;}
-  50%{opacity: 0.3; width: 150px;height: 150px;}
-  100%{opacity: 0; width: 100px;height: 100px;}
-}
-
-nav{
+nav {
   float: right;
   margin-top: 50px;
 }
 
-.logo{
-  margin-top: 50px;
-  float: left;
-  color: #fff;
-  font-size: 15px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.menu{
-padding: 0px;
-margin: 0px;
-display: block;
-}
-.menu li{
-  float: left;
-  display: block;
-  margin-right: 40px;
-}
-.menu a{
-  color: #ffffff;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 14px;
-}
-
-.clearfix:after{
-  content: '';
+.clearfix:after {
+  content: "";
   display: table;
   width: 100%;
   clear: both;
 }
 
-.caption_first{
-  font-size: 40px;
-  color: #fff;
-  text-transform: uppercase;
-  text-align: center;
-  margin-top: 180px;
-}
-
-h1{
+h1 {
   font-size: 75px;
   color: #fff;
   text-transform: uppercase;
@@ -95,12 +31,12 @@ h1{
   margin: 15px;
 }
 
-.button{
+.button {
   background: #fff;
   color: #6c36fe;
   border-radius: 3px;
   display: block;
-  width:240px;
+  width: 240px;
   padding: 20px 0;
   margin: 0 auto;
   text-decoration: none;
@@ -111,40 +47,148 @@ h1{
   margin-top: 50px;
 }
 
-.title{
+.caption_first {
+  font-size: 40px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 180px;
+}
+
+.logo {
+  margin-top: 50px;
+  float: left;
+  color: #fff;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu {
+  padding: 0px;
+  margin: 0px;
+  display: block;
+}
+
+.menu li {
+  float: left;
+  display: block;
+  margin-right: 40px;
+}
+
+.menu a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.cirсle {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  position: relative;
+  opacity: 1;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-iteration-count: 10;
+          animation-iteration-count: 10;
+  -webkit-animation-name: loading;
+          animation-name: loading;
+  background-color: rebeccapurple;
+}
+
+.container {
+  width: 930px;
+  margin: 0 auto;
+}
+
+@keyframes loading {
+  0% {
+    opacity: 0.9;
+  }
+  25% {
+    opacity: 0.6;
+    width: 100px;
+    height: 100px;
+  }
+  50% {
+    opacity: 0.3;
+    width: 150px;
+    height: 150px;
+  }
+  100% {
+    opacity: 0;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@-webkit-keyframes loading {
+  0% {
+    opacity: 0.9;
+  }
+  25% {
+    opacity: 0.6;
+    width: 100px;
+    height: 100px;
+  }
+  50% {
+    opacity: 0.3;
+    width: 150px;
+    height: 150px;
+  }
+  100% {
+    opacity: 0;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.title {
   padding-top: 115px;
 }
-.title h2{
-  font-size: 40px;  
+
+.title h2 {
+  font-size: 40px;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
   margin: 0;
   color: #010822;
 }
-.title p{
+
+.title p {
   font-size: 15px;
   color: #777;
   text-align: center;
   margin-top: 5px;
 }
 
-.service{
+.service {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-top: 30px;
 }
 
-.service_item{
+.service .service_item {
   width: 270px;
   text-align: center;
 }
-.service_item h3{
+
+.service .service_item h3 {
   font-size: 18px;
   margin-bottom: 5px;
   color: #010822;
 }
-.service_item p{
+
+.service .service_item p {
   color: #777;
   font-size: 14px;
 }
+/*# sourceMappingURL=main.css.map */
