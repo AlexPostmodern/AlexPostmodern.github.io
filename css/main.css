@@ -1,10 +1,10 @@
 body {
   margin: 0;
   padding: 0;
-  background: #1E1E1E;
+  background: #424242;
 }
 
-ul {
+.social {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -17,11 +17,14 @@ ul {
   display: flex;
 }
 
-ul li {
+.social ul li {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-ul li a {
+.social ul li a {
   display: block;
   position: relative;
   width: 50px;
@@ -32,136 +35,142 @@ ul li a {
   text-decoration: none;
   color: #fff;
   margin: 10px 0;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  /*&:nth-child(1):span{
-                    box-shadow: 0 0 10px green;
-                }*/
 }
 
-ul li a:nth-child(1):hover {
+.social ul li a:nth-child(1):hover {
   color: #3f51b8;
-  -webkit-box-shadow: 10px 0px 10px 0px #3f51b8;
-          box-shadow: 10px 0px 10px 0px #3f51b8;
+  -webkit-box-shadow: 0px 0px 20px 0px #3f51b8;
+          box-shadow: 0px 0px 20px 0px #3f51b8;
   -webkit-transition-delay: 0.2s;
           transition-delay: 0.2s;
 }
 
-ul li a:nth-child(1):hover span:nth-child(1) {
+.social ul li a:nth-child(1):hover span:nth-child(1) {
   background: #3f51b8;
   -webkit-box-shadow: 0px 0 10px #3f51b8, 0 0 40px #3f51b8, 0 0 80px #3f51b8;
           box-shadow: 0px 0 10px #3f51b8, 0 0 40px #3f51b8, 0 0 80px #3f51b8;
 }
 
-ul li a:nth-child(1):hover span:nth-child(2) {
+.social ul li a:nth-child(1):hover span:nth-child(2) {
   background: #3f51b8;
   -webkit-box-shadow: 0 0 10px #3f51b8, 0 0 40px #3f51b8, 0 0 80px #3f51b8;
           box-shadow: 0 0 10px #3f51b8, 0 0 40px #3f51b8, 0 0 80px #3f51b8;
 }
 
-ul li a:nth-child(1):hover span:nth-child(3) {
+.social ul li a:nth-child(1):hover span:nth-child(3) {
   background: #3f51b8;
   -webkit-box-shadow: 0 0 10px #3f51b8, 0 0 40px #3f51b8, 0 0 80px #3f51b8;
           box-shadow: 0 0 10px #3f51b8, 0 0 40px #3f51b8, 0 0 80px #3f51b8;
 }
 
-ul li a:nth-child(1):hover span:nth-child(4) {
+.social ul li a:nth-child(1):hover span:nth-child(4) {
   background: #3f51b8;
   -webkit-box-shadow: 0 0 10px #3f51b8, 0 0 40px #3f51b8, 0 0 80px #3f51b8;
           box-shadow: 0 0 10px #3f51b8, 0 0 40px #3f51b8, 0 0 80px #3f51b8;
 }
 
-ul li a:nth-child(2):hover {
+.social ul li a:nth-child(2):hover {
   color: #f336b4;
-  -webkit-box-shadow: 10px 0px 10px 0px #f336b4;
-          box-shadow: 10px 0px 10px 0px #f336b4;
+  -webkit-box-shadow: 0px 0px 20px 0px #f336b4;
+          box-shadow: 0px 0px 20px 0px #f336b4;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
 }
 
-ul li a:nth-child(2):hover span:nth-child(1) {
+.social ul li a:nth-child(2):hover span:nth-child(1) {
   background: #f336b4;
   -webkit-box-shadow: 0 0 10px #f336b4;
           box-shadow: 0 0 10px #f336b4;
 }
 
-ul li a:nth-child(2):hover span:nth-child(2) {
+.social ul li a:nth-child(2):hover span:nth-child(2) {
   background: #f336b4;
   -webkit-box-shadow: 0 0 10px #f336b4;
           box-shadow: 0 0 10px #f336b4;
 }
 
-ul li a:nth-child(2):hover span:nth-child(3) {
+.social ul li a:nth-child(2):hover span:nth-child(3) {
   background: #f336b4;
   -webkit-box-shadow: 0 0 10px #f336b4;
           box-shadow: 0 0 10px #f336b4;
 }
 
-ul li a:nth-child(2):hover span:nth-child(4) {
+.social ul li a:nth-child(2):hover span:nth-child(4) {
   background: #f336b4;
   -webkit-box-shadow: 0 0 10px #f336b4;
           box-shadow: 0 0 10px #f336b4;
 }
 
-ul li a:nth-child(3):hover {
+.social ul li a:nth-child(3):hover {
   color: #39baec;
-  -webkit-box-shadow: 10px 0px 10px 0px #39baec;
-          box-shadow: 10px 0px 10px 0px #39baec;
+  -webkit-box-shadow: 0px 0px 20px 0px #39baec;
+          box-shadow: 0px 0px 20px 0px #39baec;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
 }
 
-ul li a:nth-child(3):hover span:nth-child(1) {
+.social ul li a:nth-child(3):hover span:nth-child(1) {
   background: #39baec;
   -webkit-box-shadow: 0 0 10px #39baec;
           box-shadow: 0 0 10px #39baec;
 }
 
-ul li a:nth-child(3):hover span:nth-child(2) {
+.social ul li a:nth-child(3):hover span:nth-child(2) {
   background: #39baec;
   -webkit-box-shadow: 0 0 10px #39baec;
           box-shadow: 0 0 10px #39baec;
 }
 
-ul li a:nth-child(3):hover span:nth-child(3) {
+.social ul li a:nth-child(3):hover span:nth-child(3) {
   background: #39baec;
   -webkit-box-shadow: 0 0 10px #39baec;
           box-shadow: 0 0 10px #39baec;
 }
 
-ul li a:nth-child(3):hover span:nth-child(4) {
+.social ul li a:nth-child(3):hover span:nth-child(4) {
   background: #39baec;
   -webkit-box-shadow: 0 0 10px #39baec;
           box-shadow: 0 0 10px #39baec;
 }
 
-ul li a:nth-child(4):hover {
+.social ul li a:nth-child(4):hover {
   color: #521b5f;
-  -webkit-box-shadow: 10px 0px 10px 0px #521b5f;
-          box-shadow: 10px 0px 10px 0px #521b5f;
+  -webkit-box-shadow: 0px 0px 20px 0px #521b5f;
+          box-shadow: 0px 0px 20px 0px #521b5f;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
 }
 
-ul li a:nth-child(4):hover span:nth-child(1) {
+.social ul li a:nth-child(4):hover span:nth-child(1) {
   background: #521b5f;
   -webkit-box-shadow: 0 0 10px #521b5f;
           box-shadow: 0 0 10px #521b5f;
 }
 
-ul li a:nth-child(4):hover span:nth-child(2) {
+.social ul li a:nth-child(4):hover span:nth-child(2) {
   background: #521b5f;
   -webkit-box-shadow: 0 0 10px #521b5f;
           box-shadow: 0 0 10px #521b5f;
 }
 
-ul li a:nth-child(4):hover span:nth-child(3) {
+.social ul li a:nth-child(4):hover span:nth-child(3) {
   background: #521b5f;
   -webkit-box-shadow: 0 0 10px #521b5f;
           box-shadow: 0 0 10px #521b5f;
 }
 
-ul li a:nth-child(4):hover span:nth-child(4) {
+.social ul li a:nth-child(4):hover span:nth-child(4) {
   background: #521b5f;
   -webkit-box-shadow: 0 0 10px #521b5f;
           box-shadow: 0 0 10px #521b5f;
 }
 
-ul li a:hover span:nth-child(1) {
+.social ul li a:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.social ul li a:hover span:nth-child(1) {
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
   -webkit-transform-origin: left;
@@ -172,7 +181,7 @@ ul li a:hover span:nth-child(1) {
   transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
-ul li a:hover span:nth-child(3) {
+.social ul li a:hover span:nth-child(3) {
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
   -webkit-transform-origin: right;
@@ -183,7 +192,7 @@ ul li a:hover span:nth-child(3) {
   transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
-ul li a:hover span:nth-child(2) {
+.social ul li a:hover span:nth-child(2) {
   -webkit-transform: scaleY(1);
           transform: scaleY(1);
   -webkit-transform-origin: top;
@@ -194,7 +203,7 @@ ul li a:hover span:nth-child(2) {
   transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
-ul li a:hover span:nth-child(4) {
+.social ul li a:hover span:nth-child(4) {
   -webkit-transform: scaleY(1);
           transform: scaleY(1);
   -webkit-transform-origin: bottom;
@@ -205,7 +214,7 @@ ul li a:hover span:nth-child(4) {
   transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
-ul li a span {
+.social ul li a span {
   position: absolute;
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
@@ -215,33 +224,33 @@ ul li a span {
           box-shadow: 0 0 10px #fff, 0 0 40px #fff;
 }
 
-ul li a span:nth-child(1), ul li a span:nth-child(3) {
+.social ul li a span:nth-child(1), .social ul li a span:nth-child(3) {
   width: 100%;
   height: 1px;
   background: #fff;
 }
 
-ul li a span:nth-child(1) {
+.social ul li a span:nth-child(1) {
   top: 0;
   left: 0;
   -webkit-transform-origin: right;
           transform-origin: right;
 }
 
-ul li a span:nth-child(3) {
+.social ul li a span:nth-child(3) {
   bottom: 0;
   left: 0;
   -webkit-transform-origin: left;
           transform-origin: left;
 }
 
-ul li a span:nth-child(2), ul li a span:nth-child(4) {
+.social ul li a span:nth-child(2), .social ul li a span:nth-child(4) {
   width: 1px;
   height: 100%;
   background: #fff;
 }
 
-ul li a span:nth-child(2) {
+.social ul li a span:nth-child(2) {
   top: 0;
   left: 0;
   -webkit-transform: scaleY(0);
@@ -250,12 +259,27 @@ ul li a span:nth-child(2) {
           transform-origin: bottom;
 }
 
-ul li a span:nth-child(4) {
+.social ul li a span:nth-child(4) {
   top: 0;
   right: 0;
   -webkit-transform: scaleY(0);
           transform: scaleY(0);
   -webkit-transform-origin: top;
           transform-origin: top;
+}
+
+header {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+}
+
+header h1 {
+  color: #fff;
+  letter-spacing: 4;
 }
 /*# sourceMappingURL=main.css.map */
