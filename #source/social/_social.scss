@@ -140,6 +140,7 @@ ul {
             span {
                 position: absolute;
                 transition: transform 0.5s;
+                box-shadow: 0 0 10px $icon_color,0 0 40px $icon_color;
                 &:nth-child(1),
                 &:nth-child(3) {
                     width: 100%;
