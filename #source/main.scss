@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    background: #1e1e1e;
 }
 
 ul {
@@ -24,40 +25,109 @@ ul {
             text-align: center;
             //background: #ccc;
             text-decoration: none;
-            color: #262626;
+            color: #fff;
             margin: 10px 0;
             transition: 0.5s;
-            &:hover {
-                span:nth-child(1){
-                    transform: scaleX(0);
-                    transform-origin: left;
-                    transition: transform .5s;
+            &:nth-child(1):hover {
+                $color_vk: rgb(63, 81, 184);
+                color: $color_vk;
+                //box-shadow: 0 0 10px $color_vk;
+                span:nth-child(1) {
+                    background: $color_vk;
                 }
-                span:nth-child(3){
-                    transform: scaleX(0);
-                    transform-origin: right;
-                    transition: transform .5s;
+                span:nth-child(2) {
+                    background: $color_vk;
                 }
-
-                span:nth-child(2){
-                    transform:scaleY(1);
-                    transform-origin: top;
-                    transition: transform .5s;
+                span:nth-child(3) {
+                    background: $color_vk;
                 }
-                span:nth-child(4){
-                    transform:scaleY(1);
-                    transform-origin: bottom;
-                    transition: transform .5s;
+                span:nth-child(4) {
+                    background: $color_vk;
                 }
             }
+            &:nth-child(2):hover {
+                $color_inst: rgb(243, 54, 180);
+                color: $color_inst;
+                span:nth-child(1) {
+                    background: $color_inst;
+                }
+                span:nth-child(2) {
+                    background: $color_inst;
+                }
+                span:nth-child(3) {
+                    background: $color_inst;
+                }
+                span:nth-child(4) {
+                    background: $color_inst;
+                }
+            }
+            &:nth-child(3):hover {
+                $color_tw: rgb(57, 186, 236);
+                color: $color_tw;
+                span:nth-child(1) {
+                    background: $color_tw;
+                }
+                span:nth-child(2) {
+                    background: $color_tw;
+                }
+                span:nth-child(3) {
+                    background: $color_tw;
+                }
+                span:nth-child(4) {
+                    background: $color_tw;
+                }
+            }
+            &:nth-child(4):hover {
+                $color_git: rgb(82, 27, 95);
+                color: $color_git;
+                span:nth-child(1) {
+                    background: $color_git;
+                }
+                span:nth-child(2) {
+                    background: $color_git;
+                }
+                span:nth-child(3) {
+                    background: $color_git;
+                }
+                span:nth-child(4) {
+                    background: $color_git;
+                }
+            }
+            &:hover {
+                span:nth-child(1) {
+                    transform: scaleX(0);
+                    transform-origin: left;
+                    transition: transform 0.5s;
+                }
+                span:nth-child(3) {
+                    transform: scaleX(0);
+                    transform-origin: right;
+                    transition: transform 0.5s;
+                }
+
+                span:nth-child(2) {
+                    transform: scaleY(1);
+                    transform-origin: top;
+                    transition: transform 0.5s;
+                }
+                span:nth-child(4) {
+                    transform: scaleY(1);
+                    transform-origin: bottom;
+                    transition: transform 0.5s;
+                }
+            }
+            /*&:nth-child(1):span{
+                box-shadow: 0 0 10px green;
+            }*/
             span {
                 position: absolute;
                 transition: transform 0.5s;
+                box-shadow: 0 0 10px #fff;
                 &:nth-child(1),
                 &:nth-child(3) {
                     width: 100%;
                     height: 1px;
-                    background: #262626;
+                    background: #fff;
                 }
                 &:nth-child(1) {
                     top: 0;
@@ -74,18 +144,18 @@ ul {
                 &:nth-child(4) {
                     width: 1px;
                     height: 100%;
-                    background: #262626;
+                    background: #fff;
                 }
                 &:nth-child(2) {
                     top: 0;
                     left: 0;
-                    transform:scaleY(0);
+                    transform: scaleY(0);
                     transform-origin: bottom;
                 }
                 &:nth-child(4) {
                     top: 0;
                     right: 0;
-                    transform:scaleY(0);
+                    transform: scaleY(0);
                     transform-origin: top;
                 }
             }
