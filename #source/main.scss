@@ -1,29 +1,25 @@
 body {
     margin: 0;
     padding: 0;
-    background: #424242;
+    background: #000;
+}
+section{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .social{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    padding: 0;
-    display: flex;
+    display: block;
+    align-items: center;
     @import"./social/_social.scss";
 }
 
-
-header{
-    position:absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    padding: 0;
-    h1{
-        color: #fff;
-        letter-spacing: 4;
-    }
+.rainbow_button {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    min-height: 10vh;
+    @import"./rainbow_button/_rainbow_button.scss";
 }
+
