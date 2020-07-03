@@ -1,30 +1,105 @@
-body {
-  margin: 0;
+@charset "UTF-8";
+/*Обнуление*/
+* {
   padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body {
   background: #000;
 }
 
-section {
+header {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social {
+  padding-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
-.social {
+.social ul {
+  margin: 0;
+  padding: 0;
   display: block;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .social ul li {
@@ -55,28 +130,11 @@ section {
           transition-delay: 0.2s;
 }
 
-.social ul li a:nth-child(1):hover span:nth-child(1) {
+.social ul li a:nth-child(1):hover span:nth-child(1), .social ul li a:nth-child(1):hover span:nth-child(2),
+.social ul li a:nth-child(1):hover span:nth-child(3), .social ul li a:nth-child(1):hover span:nth-child(4) {
   background: #3f51b8;
-  -webkit-box-shadow: 0px 0 10px #3f51b8, 0 0 40px #3f51b8, 0 0 80px #3f51b8;
-          box-shadow: 0px 0 10px #3f51b8, 0 0 40px #3f51b8, 0 0 80px #3f51b8;
-}
-
-.social ul li a:nth-child(1):hover span:nth-child(2) {
-  background: #3f51b8;
-  -webkit-box-shadow: 0 0 10px #3f51b8, 0 0 40px #3f51b8, 0 0 80px #3f51b8;
-          box-shadow: 0 0 10px #3f51b8, 0 0 40px #3f51b8, 0 0 80px #3f51b8;
-}
-
-.social ul li a:nth-child(1):hover span:nth-child(3) {
-  background: #3f51b8;
-  -webkit-box-shadow: 0 0 10px #3f51b8, 0 0 40px #3f51b8, 0 0 80px #3f51b8;
-          box-shadow: 0 0 10px #3f51b8, 0 0 40px #3f51b8, 0 0 80px #3f51b8;
-}
-
-.social ul li a:nth-child(1):hover span:nth-child(4) {
-  background: #3f51b8;
-  -webkit-box-shadow: 0 0 10px #3f51b8, 0 0 40px #3f51b8, 0 0 80px #3f51b8;
-          box-shadow: 0 0 10px #3f51b8, 0 0 40px #3f51b8, 0 0 80px #3f51b8;
+  -webkit-box-shadow: 0 0 10px #3f51b8;
+          box-shadow: 0 0 10px #3f51b8;
 }
 
 .social ul li a:nth-child(2):hover {
@@ -87,25 +145,8 @@ section {
           transition-delay: 0.2s;
 }
 
-.social ul li a:nth-child(2):hover span:nth-child(1) {
-  background: #f336b4;
-  -webkit-box-shadow: 0 0 10px #f336b4;
-          box-shadow: 0 0 10px #f336b4;
-}
-
-.social ul li a:nth-child(2):hover span:nth-child(2) {
-  background: #f336b4;
-  -webkit-box-shadow: 0 0 10px #f336b4;
-          box-shadow: 0 0 10px #f336b4;
-}
-
-.social ul li a:nth-child(2):hover span:nth-child(3) {
-  background: #f336b4;
-  -webkit-box-shadow: 0 0 10px #f336b4;
-          box-shadow: 0 0 10px #f336b4;
-}
-
-.social ul li a:nth-child(2):hover span:nth-child(4) {
+.social ul li a:nth-child(2):hover span:nth-child(1), .social ul li a:nth-child(2):hover span:nth-child(2),
+.social ul li a:nth-child(2):hover span:nth-child(3), .social ul li a:nth-child(2):hover span:nth-child(4) {
   background: #f336b4;
   -webkit-box-shadow: 0 0 10px #f336b4;
           box-shadow: 0 0 10px #f336b4;
@@ -119,25 +160,8 @@ section {
           transition-delay: 0.2s;
 }
 
-.social ul li a:nth-child(3):hover span:nth-child(1) {
-  background: #39baec;
-  -webkit-box-shadow: 0 0 10px #39baec;
-          box-shadow: 0 0 10px #39baec;
-}
-
-.social ul li a:nth-child(3):hover span:nth-child(2) {
-  background: #39baec;
-  -webkit-box-shadow: 0 0 10px #39baec;
-          box-shadow: 0 0 10px #39baec;
-}
-
-.social ul li a:nth-child(3):hover span:nth-child(3) {
-  background: #39baec;
-  -webkit-box-shadow: 0 0 10px #39baec;
-          box-shadow: 0 0 10px #39baec;
-}
-
-.social ul li a:nth-child(3):hover span:nth-child(4) {
+.social ul li a:nth-child(3):hover span:nth-child(1), .social ul li a:nth-child(3):hover span:nth-child(2),
+.social ul li a:nth-child(3):hover span:nth-child(3), .social ul li a:nth-child(3):hover span:nth-child(4) {
   background: #39baec;
   -webkit-box-shadow: 0 0 10px #39baec;
           box-shadow: 0 0 10px #39baec;
@@ -151,25 +175,8 @@ section {
           transition-delay: 0.2s;
 }
 
-.social ul li a:nth-child(4):hover span:nth-child(1) {
-  background: #521b5f;
-  -webkit-box-shadow: 0 0 10px #521b5f;
-          box-shadow: 0 0 10px #521b5f;
-}
-
-.social ul li a:nth-child(4):hover span:nth-child(2) {
-  background: #521b5f;
-  -webkit-box-shadow: 0 0 10px #521b5f;
-          box-shadow: 0 0 10px #521b5f;
-}
-
-.social ul li a:nth-child(4):hover span:nth-child(3) {
-  background: #521b5f;
-  -webkit-box-shadow: 0 0 10px #521b5f;
-          box-shadow: 0 0 10px #521b5f;
-}
-
-.social ul li a:nth-child(4):hover span:nth-child(4) {
+.social ul li a:nth-child(4):hover span:nth-child(1), .social ul li a:nth-child(4):hover span:nth-child(2),
+.social ul li a:nth-child(4):hover span:nth-child(3), .social ul li a:nth-child(4):hover span:nth-child(4) {
   background: #521b5f;
   -webkit-box-shadow: 0 0 10px #521b5f;
           box-shadow: 0 0 10px #521b5f;
@@ -279,14 +286,15 @@ section {
 }
 
 .rainbow_button {
+  padding-top: 50px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   min-height: 10vh;
 }
 
@@ -295,13 +303,44 @@ section {
   width: 160px;
   height: 50px;
   line-height: 48px;
+  display: block;
   background: #000;
   text-transform: uppercase;
   font-size: 20px;
   letter-spacing: 4px;
   text-decoration: none;
+  margin: 0;
+  padding: 0;
   color: #fff;
   -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+  /*&:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;    
+        background: linear-gradient(45deg, #fb0094, #00f,#0f0,
+        #ff0,#f00,#fb0094, #00f,#0f0,#ff0,#f00);
+        background-size:400%;
+        opacity:0;
+        transition: 0.5s;
+    }
+    &:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;    
+        background: linear-gradient(45deg, #fb0094, #00f,#0f0,
+        #ff0,#f00,#fb0094, #00f,#0f0,#ff0,#f00);
+        background-size:400%;
+        opacity:0;
+        transition: 0.5s;
+        filter: blur(20px);
+        animation: animate 20s linear infinite;
+    }*/
 }
 
 .rainbow_button a:hover span {
@@ -351,7 +390,7 @@ section {
   transition: 0.5s;
 }
 
-.rainbow_button a:before {
+.rainbow_button a::before {
   content: '';
   position: absolute;
   top: 0;
@@ -361,10 +400,10 @@ section {
   background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
   background-size: 400%;
   opacity: 0;
-  -webkit-filter: blur(20px);
-          filter: blur(20px);
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
   -webkit-animation: animate 20s linear infinite;
           animation: animate 20s linear infinite;
 }

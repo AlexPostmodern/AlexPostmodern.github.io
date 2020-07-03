@@ -1,24 +1,23 @@
+@import"./zeroing/_zeroing.scss";
 body {
-    margin: 0;
-    padding: 0;
     background: #000;
 }
-section{
-    display:flex;
-    justify-content: center;
-    align-items: center;
+header{
     flex-direction: column;
+    justify-content: center;
 }
 .social{
-    display: block;
-    align-items: center;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
     @import"./social/_social.scss";
 }
 
 .rainbow_button {
+    padding-top: 50px;
     box-sizing: border-box;
     display: flex;
-    align-items: center;
+    justify-content: center;
     min-height: 10vh;
     @import"./rainbow_button/_rainbow_button.scss";
 }
