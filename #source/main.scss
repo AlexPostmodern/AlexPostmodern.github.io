@@ -1,16 +1,34 @@
-@import"./zeroing/_zeroing.scss";
+@import "./zeroing/_zeroing.scss";
+html {
+    font-family: "Open Sans";
+    font-size: 14px;
+}
+
 body {
     background: #000;
+    &::-webkit-scrollbar {
+        width: 0.25em;
+    }
+    &::-webkit-scrollbar-track {
+        background: #1e1e24;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: #7fc3d4;
+    }
 }
-header{
-    flex-direction: column;
-    justify-content: center;
+
+@import "./nav_menu/_nav_menu.scss";
+
+main {
+    margin-left: 5rem; //5rem = 16px*5 = 80px
+    padding: 1rem;
 }
-.social{
+
+.social {
     padding-top: 50px;
     display: flex;
     justify-content: center;
-    @import"./social/_social.scss";
+    @import "./social/_social.scss";
 }
 
 .rainbow_button {
@@ -19,6 +37,20 @@ header{
     display: flex;
     justify-content: center;
     min-height: 10vh;
-    @import"./rainbow_button/_rainbow_button.scss";
+    @import "./rainbow_button/_rainbow_button.scss";
 }
 
+.exp {
+    padding-top: 900px;
+    color: aliceblue;
+}
+
+//
+@media only screen and (max-width: 600px){
+    main{
+        margin: 0;
+    }
+    html{
+        font-size: 10px;
+    }
+}
