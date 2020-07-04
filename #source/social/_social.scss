@@ -1,5 +1,5 @@
 ul {
-    $icon_color: #b6b6b6;
+    $icon_color: rgb(83, 83, 83);
     margin: 0;
     padding: 0;
     display: block;
@@ -22,7 +22,7 @@ ul {
                 $_color:$color;
                 color: $_color;
                 box-shadow: 0px 0px 20px 0px $_color;
-                //text-shadow: 0 0 10px #fff;
+                //text-shadow: 0 0 10px #000;
                 transition-delay: 0.2s;
                 span:nth-child(1),span:nth-child(2),
                 span:nth-child(3),span:nth-child(4) {

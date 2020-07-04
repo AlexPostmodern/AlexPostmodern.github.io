@@ -1,79 +1,101 @@
-.nav_menu {
-    position: fixed;
-    background-color: rgb(59, 59, 59);
-    transition: width 300ms ease;
-    
-   
-    .navmenu_nav {
-        $text_primary: #b6b6b6;
-        $color_icon:#141418;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
+:root {
+    $color_bg: linear-gradient(45deg, #eecfba, #c5dde8);
+    $color_bg_hover: rgb(83, 83, 83);
+    $text_primary: #b6b6b6;
+    $color_icon: rgb(83, 83, 83);
+    $color_icon_hover: #eecfba;
 
-        .nav_item {
-            width: 100%;
-            &:last-child {
-                margin-top: auto;
-            }
-            .nav_link {
-                display: flex;
-                align-items: center;
-                font-size: 2rem;
-                text-decoration: none;
-                height: 5rem;
-                padding-top: 1rem;
-                padding-bottom: 1rem;
-                padding-left: 1.4rem;
-                color: rgb(80, 117, 240);
-                filter: grayscale(100%) opacity(0.5);
-                &:hover{
-                    background: rgb(41, 41, 41);
-                    filter: grayscale(0%) opacity(1);   
-                    transition: .4s;
+    .nav_menu {
+        position: fixed;
+        background-color: $color_bg;
+        transition: width 300ms ease;
+
+        .navmenu_nav {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+
+            .nav_item {
+                width: 100%;
+                &:nth-child(4) {
+                    .nav_link {
+                        padding-left: 1.8rem;
+                    }
+                    .link_text {
+                        margin: 0 4rem;
+                    }
+                }
+                .nav_link {
+                    display: flex;
+                    align-items: center;
+                    font-size: 2rem;
+                    text-decoration: none;
+                    height: 5rem;
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
+                    padding-left: 1.4rem;
+                    color: $color_icon;
                 }
             }
-        }
 
-        .link_text {
-            display: none;
-            font-size: 1rem;
-            color:$text_primary;
-            margin: 0 3rem;
-        }
-    }
-}
-
-//small
-@media only screen and (max-width: 600px){
-    .nav_menu{
-        bottom: 0;
-        width: 100vw;
-        height: 5rem;
-    }
-    .navmenu_nav{
-        flex-direction: row;
-    }
-    .nav_link{
-        justify-content: center;
-    }
-}
-
-//large
-@media only screen and (min-width: 600px){
-    .nav_menu{
-        top:0;
-        width: 5rem;
-        height: 100vh;
-        &:hover {
-            width: 16rem;
-            .navmenu_nav .nav_item .nav_link .link_text{
-                display: block;
+            .link_text {
+                display: none;
+                font-size: 1rem;
+                color: transparent;
+                margin: 0 3.2rem;
             }
         }
-        .navmenu_nav{
-            flex-direction: column;
+    }
+
+    //small
+    @media only screen and (max-width: 600px) {
+        .nav_menu {
+            bottom: 0;
+            width: 100vw;
+            height: 5rem;
+        }
+        .navmenu_nav {
+            flex-direction: row;
+            .nav_item .nav_link {
+                justify-content: center;
+            }
+        }
+        .navmenu_nav .nav_item .nav_link:hover {
+            text-shadow: 0 0 10px #000, 0 0 20px #000,
+            0 0 30px #000,0 0 50px #000;
+            color: $color_icon_hover;
+        }
+    }
+
+    //large
+    @media only screen and (min-width: 600px) {
+        .nav_menu {
+            top: 0;
+            width: 5rem;
+            height: 100vh;
+            &:hover {
+                width: 16rem;
+                .navmenu_nav .nav_item .nav_link .link_text {
+                    display: block;
+                }
+            }
+            .navmenu_nav .nav_item .nav_link:hover {
+                background: $color_bg_hover;
+                color: $color_icon_hover;
+                transition: 0.4s;
+                .link_text {
+                    color: $text_primary;
+                }
+            }
+            .navmenu_nav {
+                flex-direction: column;
+                .nav_item:nth-child(4) .nav_link {
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+                }
+            }
         }
     }
 }
