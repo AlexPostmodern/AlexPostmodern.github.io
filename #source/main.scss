@@ -18,11 +18,8 @@ body {
 }
 
 @import "./nav_menu/_nav_menu.scss";
+@import "./navigation/_navigation.scss";
 
-main {
-    //margin-left: 5rem; //5rem = 16px*5 = 80px
-    padding: 1rem;
-}
 
 .social {
     margin-top: 30vh;
