@@ -26,7 +26,7 @@
 
     &:nth-child(6n+1) a::before{
         background: linear-gradient(90deg, #aea4e3, #d3ffe8);
-        
+        //transition: background-color 3s;
     }    
     &:nth-child(6n+2) a::before{
         background: linear-gradient(90deg, #cfecd0, #a0c9ce, #9ec0db);
@@ -56,30 +56,36 @@
         content: "";
         position: absolute;
         top: 50%;
-        left: 40%;
+        left: 50%;
         transform: translate(-50%,-50%);
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 8rem;
+        font-size: 18rem;
         color: rgba(0, 0, 0, 0.1);
-        border-radius: 50%;
+        //border-radius: 50%;
         z-index: -1;
         opacity: 0;
         font-weight: 900;
         text-transform: uppercase;
         letter-spacing: 500px;
-        transition: letter-spacing 0.5s, left .5s;
+        //transition: .5s;
+        transition: letter-spacing 0.5s;//, background-color .6s;
     }
 
     &:hover::before {
         content: attr(data-text);
         opacity: 1;
-        left: 50%;
         letter-spacing: 10px;
-        //padding: 0;
-        //margin: 0;
-        width: 2000px;
-        height: 2000px;
+        /*width: 2000px;
+        height: 2000px;*/
+        width: 100vw;
+        height: 100vh;
+        //border-radius: 0;
+    }
+}
+@media only screen and (max-width: 600px){
+    .navigation ul li a:before{
+        font-size: 6rem;
     }
 }

@@ -87,11 +87,11 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: #1e1e24;
+  background: #7fc3d4;
 }
 
 body::-webkit-scrollbar-thumb {
-  background: #7fc3d4;
+  background: #1e1e24;
 }
 
 :root .nav_menu {
@@ -276,7 +276,7 @@ body::-webkit-scrollbar-thumb {
   content: "";
   position: absolute;
   top: 50%;
-  left: 40%;
+  left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   display: -webkit-box;
@@ -288,25 +288,31 @@ body::-webkit-scrollbar-thumb {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 8rem;
+  font-size: 18rem;
   color: rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
   z-index: -1;
   opacity: 0;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 500px;
-  -webkit-transition: letter-spacing 0.5s, left .5s;
-  transition: letter-spacing 0.5s, left .5s;
+  -webkit-transition: letter-spacing 0.5s;
+  transition: letter-spacing 0.5s;
 }
 
 .navigation ul li a:hover::before {
   content: attr(data-text);
   opacity: 1;
-  left: 50%;
   letter-spacing: 10px;
-  width: 2000px;
-  height: 2000px;
+  /*width: 2000px;
+        height: 2000px;*/
+  width: 100vw;
+  height: 100vh;
+}
+
+@media only screen and (max-width: 600px) {
+  .navigation ul li a:before {
+    font-size: 6rem;
+  }
 }
 
 .social {
