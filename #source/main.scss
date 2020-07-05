@@ -1,8 +1,17 @@
 @import "./zeroing/_zeroing.scss";
+
+:root{
+    --color1:#EECFBA;
+    --color2:#C5DDE8;
+    $color1:var(--color1);
+    $color2:var(--color2);
+}
+
 html {
     @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Satisfy&display=swap");
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
+    scroll-behavior: smooth;
 }
 
 body {
