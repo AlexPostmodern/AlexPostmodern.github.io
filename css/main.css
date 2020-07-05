@@ -79,7 +79,7 @@ html {
 }
 
 body {
-  background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+  background: linear-gradient(45deg, #EECFBA, #C5DDE8) fixed;
 }
 
 body::-webkit-scrollbar {
@@ -228,13 +228,15 @@ body::-webkit-scrollbar-thumb {
 .navigation ul li {
   text-align: center;
   list-style: none;
-  margin-bottom: 2rem;
+  padding-bottom: 3rem;
   letter-spacing: 1rem;
 }
 
 .navigation ul li:hover a {
   color: #000;
   background: #fff;
+  -webkit-box-shadow: 0 0 40px 30px #fff;
+          box-shadow: 0 0 40px 30px #fff;
 }
 
 .navigation ul li:nth-child(6n+1) a::before {
@@ -290,30 +292,28 @@ body::-webkit-scrollbar-thumb {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 18rem;
+  font-size: 19rem;
   color: rgba(0, 0, 0, 0.1);
   z-index: -1;
   opacity: 0;
   font-weight: 900;
   text-transform: uppercase;
-  letter-spacing: 500px;
-  -webkit-transition: letter-spacing 0.5s;
-  transition: letter-spacing 0.5s;
+  letter-spacing: 40rem;
+  -webkit-transition: letter-spacing 0.7s, opacity .2s;
+  transition: letter-spacing 0.7s, opacity .2s;
 }
 
 .navigation ul li a:hover::before {
   content: attr(data-text);
   opacity: 1;
-  letter-spacing: 10px;
-  /*width: 2000px;
-        height: 2000px;*/
+  letter-spacing: 3rem;
   width: 100vw;
   height: 100vh;
 }
 
 @media only screen and (max-width: 600px) {
   .navigation ul li a:before {
-    font-size: 6rem;
+    font-size: 8rem;
   }
 }
 
