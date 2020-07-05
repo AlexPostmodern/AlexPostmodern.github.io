@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*Обнуление*/
-@import url("https://fonst.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Satisfy&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 html {
-  font-family: "Open Sans";
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
 }
 
@@ -140,7 +140,8 @@ body::-webkit-scrollbar-thumb {
 
 :root .nav_menu .navmenu_nav .link_text {
   display: none;
-  font-size: 1rem;
+  font-size: 1.3rem;
+  letter-spacing: .3rem;
   color: transparent;
   margin: 0 3.2rem;
 }
@@ -203,7 +204,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .navigation {
-  font-family: "Poppins", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -228,6 +228,8 @@ body::-webkit-scrollbar-thumb {
 .navigation ul li {
   text-align: center;
   list-style: none;
+  margin-bottom: 2rem;
+  letter-spacing: 1rem;
 }
 
 .navigation ul li:hover a {

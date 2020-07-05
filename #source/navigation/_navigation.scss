@@ -1,7 +1,11 @@
-@import url("https://fonst.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+//@import url("https://fonst.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
 
+//@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200,300,400,500,600,700,800,900&display=swap");
+//@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Satisfy&display=swap");
 .navigation {
-    font-family: "Poppins", sans-serif;
+    //font-family: "Poppins", sans-serif;
+    //font-family: 'Montserrat', sans-serif;
+    //font-family: 'Montserrat', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,6 +23,8 @@
 .navigation ul li {
     text-align: center;
     list-style: none;
+    margin-bottom: 2rem;
+    letter-spacing: 1rem;
     &:hover a {
         color: #000;
         background: #fff;
