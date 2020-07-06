@@ -56,3 +56,30 @@ body {
         font-size: 12px;
     }
 }
+
+h1{
+    //z-index: -1;
+    font-size: 16rem;
+    text-transform: uppercase;
+    letter-spacing: 3rem;
+    text-align: right;
+    //color: rgb(83, 83, 83);
+}
+p{
+    font-size: 2rem;
+}
+footer{
+    p{
+        text-align: center;
+    }
+}
+.container{
+    padding: 0 100px 0 100px;
+    display: block;
+    height: 100vh;
+    .about,.projects{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}

@@ -268,8 +268,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .navigation ul li:nth-child(6n+5) a::before {
-  background: -webkit-gradient(linear, right top, left bottom, from(#370512), color-stop(#592042), color-stop(#6a457d), color-stop(#6071b9), to(#12a0eb));
-  background: linear-gradient(to left bottom, #370512, #592042, #6a457d, #6071b9, #12a0eb);
+  background: -webkit-gradient(linear, right top, left top, from(#370512), color-stop(#592042), color-stop(#6a457d), color-stop(#6071b9), to(#12a0eb));
+  background: linear-gradient(to left, #370512, #592042, #6a457d, #6071b9, #12a0eb);
 }
 
 .navigation ul li a {
@@ -656,5 +656,37 @@ body::-webkit-scrollbar-thumb {
   html {
     font-size: 12px;
   }
+}
+
+h1 {
+  font-size: 16rem;
+  text-transform: uppercase;
+  letter-spacing: 3rem;
+  text-align: right;
+}
+
+p {
+  font-size: 2rem;
+}
+
+footer p {
+  text-align: center;
+}
+
+.container {
+  padding: 0 100px 0 100px;
+  display: block;
+  height: 100vh;
+}
+
+.container .about, .container .projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=main.css.map */
