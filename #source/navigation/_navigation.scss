@@ -31,11 +31,13 @@
         background: linear-gradient(90deg, #cfecd0, #a0c9ce, #9ec0db);
     }
     &:nth-child(6n+3) a::before{
-        background: linear-gradient(rgba(135, 60, 255, 0.4), rgba(135, 60, 255, 0.0) 80%),
-		linear-gradient(-45deg, rgba(120, 155, 255, 0.9) 25%, rgba(255, 160, 65, 0.9) 75%);
+        /*background: linear-gradient(rgba(135, 60, 255, 0.4), rgba(135, 60, 255, 0.0) 80%),
+        linear-gradient(-45deg, rgba(120, 155, 255, 0.9) 25%, rgba(255, 160, 65, 0.9) 75%);*/
+        background:linear-gradient(to right, #fff7a3, #ffe0a3, #ffccb7, #ffc1d3, #fbbeeb, #e7bcf2, #d0bbf6, #b6baf7, #afb4f8, #a9aff8, #a2a9f9, #9ba4f9);
     }
     &:nth-child(6n+4) a::before{
         background: linear-gradient(90deg, #9c8de4, #ad4454);
+        //background: linear-gradient(to left bottom, #f899df, #ec9ee7, #dfa4ee, #d2a8f2, #c5adf5, #dbadf0, #edade9, #fdaee0, #ffb4c1, #ffc6a4, #ffdf96, #ebf9a3);
     }
     &:nth-child(6n+5) a::before{
         background: linear-gradient(to left bottom, #370512, #592042, #6a457d, #6071b9, #12a0eb);
@@ -76,10 +78,16 @@
         letter-spacing: 3rem;
         width: 100vw;
         height: 100vh;
+        //height: 10000px;
     }
 }
 @media only screen and (max-width: 600px){
     .navigation ul li a:before{
         font-size: 8rem;
     }
+}
+
+
+.changeBG{
+    background:linear-gradient(90deg, #aea4e3, #d3ffe8) fixed;
 }
