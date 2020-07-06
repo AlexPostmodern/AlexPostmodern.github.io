@@ -37,7 +37,7 @@ buttonProjects.onclick = () => {
 buttonHobby.onclick = () => {
   footer.style.color = "#fff"
   social.style.setProperty("--color-social", "#fff")
-  body.style.background = "linear-gradient(90deg, #9c8de4, #ad4454) fixed"
+  body.style.background = "linear-gradient(-90deg, #9c8de4, #ad4454) fixed"
 }
 
 buttonContact.onclick = () => {

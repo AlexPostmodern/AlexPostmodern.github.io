@@ -36,7 +36,7 @@
         background:linear-gradient(to right, #fff7a3, #ffe0a3, #ffccb7, #ffc1d3, #fbbeeb, #e7bcf2, #d0bbf6, #b6baf7, #afb4f8, #a9aff8, #a2a9f9, #9ba4f9);
     }
     &:nth-child(6n+4) a::before{
-        background: linear-gradient(90deg, #9c8de4, #ad4454);
+        background: linear-gradient(-90deg, #9c8de4, #ad4454);
         //background: linear-gradient(to left bottom, #f899df, #ec9ee7, #dfa4ee, #d2a8f2, #c5adf5, #dbadf0, #edade9, #fdaee0, #ffb4c1, #ffc6a4, #ffdf96, #ebf9a3);
     }
     &:nth-child(6n+5) a::before{

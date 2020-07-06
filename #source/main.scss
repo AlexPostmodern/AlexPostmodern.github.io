@@ -7,18 +7,16 @@
 
 html {
     @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Satisfy&display=swap");
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 14px;
     scroll-behavior: smooth;
-    
 }
 
 body {
+    --color-header: #fff;
+    $color_header: var(--color-header);
 
-    --color-header:#fff;
-    $color_header:var(--color-header);
-
-    background: linear-gradient(45deg, #EECFBA, #C5DDE8) fixed;
+    background: linear-gradient(45deg, #eecfba, #c5dde8) fixed;
     &::-webkit-scrollbar {
         width: 0.25em;
     }
@@ -34,7 +32,7 @@ body {
 @import "./navigation/_navigation.scss";
 
 .social {
-    --color-social:rgb(83, 83, 83);
+    --color-social: rgb(83, 83, 83);
     //margin-top: 30vh;
     display: flex;
     justify-content: center;
@@ -50,46 +48,104 @@ body {
     @import "./rainbow_button/_rainbow_button.scss";
 }
 
-
 //small
-@media only screen and (max-width: 600px){
-    main{
+@media only screen and (max-width: 600px) {
+    main {
         margin: 0;
     }
-    html{
+    html {
         font-size: 12px;
     }
 }
 
-h1{
-    //z-index: -1;
+.about h1,
+.projects h1,
+.hobby h1,
+.contact h1 {
+    z-index: -1;
     font-size: 16rem;
     text-transform: uppercase;
     letter-spacing: 3rem;
     text-align: right;
-    opacity: .7;
-    //color: $color_header;
-}
-p{
-    font-size: 2rem;
-}
-footer{
-    height: 5vh;
-    p{
-        text-align: center;
-        letter-spacing: .5rem;
+    opacity: 0.7;
+    span {
+        opacity: 1;
+        color: #ed5565;
     }
 }
-.container{
+.about h2 {
+    display: inline-block;
+    margin-top: -10rem;
+    margin-left: 86.3rem;
+    z-index: 1;
+    font-size: 16rem;
+    text-transform: uppercase;
+    letter-spacing: 3rem;
+    //text-align: right;
+    opacity: 0.99;
+    color: #ed5565;
+}
+.projects h2 {
+    display: inline-block;
+    margin-top: -8rem;
+    margin-left: 9.8rem;
+    z-index: 1;
+    font-size: 16rem;
+    text-transform: uppercase;
+    letter-spacing: 1.7rem;
+    //text-align: right;
+    opacity: 0.99;
+    color: #ed5565;
+}
+p {
+    font-size: 2rem;
+    //text-shadow: 0 0 .3rem .1rem #000;
+}
+footer {
+    height: 5vh;
+    p {
+        text-align: center;
+        letter-spacing: 0.5rem;
+    }
+}
+.container {
     padding: 0 100px 0 100px;
     display: block;
     height: 100vh;
-    &:nth-child(5){
+    &:nth-child(5) {
         height: 87vh;
     }
-    .about,.projects{
+    /*.about,.projects{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+    }*/
+}
+
+.about .text {
+    margin-top: 2rem;
+    h1 {
+        color: #000;
+        font-size: 3rem;
+        letter-spacing: 0.2rem;
+        cursor: context-menu;
+    }
+    p {
+        letter-spacing: 0.5rem;
+        text-align: right;
+    }
+    span {
+        display: inline-block;
+    }
+    span:hover {
+        color: #48cfad;
+        transition: all 0.5s;
+        text-decoration: solid;
+    }
+    span.name {
+        color: #ed5565;
+    }
+    span.m-left {
+        margin-left: -10px;
     }
 }

@@ -78,14 +78,14 @@ h1, h2, h3, h4, h5, h6 {
     $color_header:var(--color-header);
 }*/
 html {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   scroll-behavior: smooth;
 }
 
 body {
-  --color-header:#fff;
-  background: linear-gradient(45deg, #EECFBA, #C5DDE8) fixed;
+  --color-header: #fff;
+  background: linear-gradient(45deg, #eecfba, #c5dde8) fixed;
 }
 
 body::-webkit-scrollbar {
@@ -263,8 +263,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .navigation ul li:nth-child(6n+4) a::before {
-  background: -webkit-gradient(linear, left top, right top, from(#9c8de4), to(#ad4454));
-  background: linear-gradient(90deg, #9c8de4, #ad4454);
+  background: -webkit-gradient(linear, right top, left top, from(#9c8de4), to(#ad4454));
+  background: linear-gradient(-90deg, #9c8de4, #ad4454);
 }
 
 .navigation ul li:nth-child(6n+5) a::before {
@@ -332,7 +332,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .social {
-  --color-social:rgb(83, 83, 83);
+  --color-social: rgb(83, 83, 83);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -656,12 +656,48 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-h1 {
+.about h1,
+.projects h1,
+.hobby h1,
+.contact h1 {
+  z-index: -1;
   font-size: 16rem;
   text-transform: uppercase;
   letter-spacing: 3rem;
   text-align: right;
-  opacity: .7;
+  opacity: 0.7;
+}
+
+.about h1 span,
+.projects h1 span,
+.hobby h1 span,
+.contact h1 span {
+  opacity: 1;
+  color: #ed5565;
+}
+
+.about h2 {
+  display: inline-block;
+  margin-top: -10rem;
+  margin-left: 86.3rem;
+  z-index: 1;
+  font-size: 16rem;
+  text-transform: uppercase;
+  letter-spacing: 3rem;
+  opacity: 0.99;
+  color: #ed5565;
+}
+
+.projects h2 {
+  display: inline-block;
+  margin-top: -8rem;
+  margin-left: 9.8rem;
+  z-index: 1;
+  font-size: 16rem;
+  text-transform: uppercase;
+  letter-spacing: 1.7rem;
+  opacity: 0.99;
+  color: #ed5565;
 }
 
 p {
@@ -674,27 +710,57 @@ footer {
 
 footer p {
   text-align: center;
-  letter-spacing: .5rem;
+  letter-spacing: 0.5rem;
 }
 
 .container {
   padding: 0 100px 0 100px;
   display: block;
   height: 100vh;
+  /*.about,.projects{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }*/
 }
 
 .container:nth-child(5) {
   height: 87vh;
 }
 
-.container .about, .container .projects {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.about .text {
+  margin-top: 2rem;
+}
+
+.about .text h1 {
+  color: #000;
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+  cursor: context-menu;
+}
+
+.about .text p {
+  letter-spacing: 0.5rem;
+  text-align: right;
+}
+
+.about .text span {
+  display: inline-block;
+}
+
+.about .text span:hover {
+  color: #48cfad;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+}
+
+.about .text span.name {
+  color: #ed5565;
+}
+
+.about .text span.m-left {
+  margin-left: -10px;
 }
 /*# sourceMappingURL=main.css.map */
