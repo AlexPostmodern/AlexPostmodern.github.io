@@ -1,9 +1,12 @@
 :root {
     $color_bg: linear-gradient(45deg, #eecfba, #c5dde8);
     $color_bg_hover: rgb(83, 83, 83);
-    $text_primary: #b6b6b6;
+    //$text_primary: #b6b6b6;
+    $text_primary: #fff;
     $color_icon: rgb(83, 83, 83);
-    $color_icon_hover: #eecfba;
+    //$color_icon: #fff;
+    $color_icon_hover: #fff;
+    //$color_icon_hover: transparent;
 
     .nav_menu {
         position: fixed;

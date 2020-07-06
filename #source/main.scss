@@ -1,20 +1,23 @@
 @import "./zeroing/_zeroing.scss";
 
-:root{
-    --color1:#EECFBA;
-    --color2:#C5DDE8;
-    $color1:var(--color1);
-    $color2:var(--color2);
-}
+/*:root{
+    --color-header:#fff;
+    $color_header:var(--color-header);
+}*/
 
 html {
     @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Satisfy&display=swap");
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     scroll-behavior: smooth;
+    
 }
 
 body {
+
+    --color-header:#fff;
+    $color_header:var(--color-header);
+
     background: linear-gradient(45deg, #EECFBA, #C5DDE8) fixed;
     &::-webkit-scrollbar {
         width: 0.25em;
@@ -31,18 +34,19 @@ body {
 @import "./navigation/_navigation.scss";
 
 .social {
-    margin-top: 30vh;
+    --color-social:rgb(83, 83, 83);
+    //margin-top: 30vh;
     display: flex;
     justify-content: center;
     @import "./social/_social.scss";
 }
 
 .rainbow_button {
-    padding-top: 50px;
+    //padding-top: 50px;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
-    min-height: 10vh;
+    //min-height: 10vh;
     @import "./rainbow_button/_rainbow_button.scss";
 }
 
@@ -63,20 +67,26 @@ h1{
     text-transform: uppercase;
     letter-spacing: 3rem;
     text-align: right;
-    //color: rgb(83, 83, 83);
+    opacity: .7;
+    //color: $color_header;
 }
 p{
     font-size: 2rem;
 }
 footer{
+    height: 5vh;
     p{
         text-align: center;
+        letter-spacing: .5rem;
     }
 }
 .container{
     padding: 0 100px 0 100px;
     display: block;
     height: 100vh;
+    &:nth-child(5){
+        height: 87vh;
+    }
     .about,.projects{
         display: flex;
         flex-wrap: wrap;
