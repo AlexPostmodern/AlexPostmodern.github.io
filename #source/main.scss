@@ -1,0 +1,58 @@
+@import "./zeroing/_zeroing.scss";
+
+:root{
+    --color1:#EECFBA;
+    --color2:#C5DDE8;
+    $color1:var(--color1);
+    $color2:var(--color2);
+}
+
+html {
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Satisfy&display=swap");
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(45deg, #EECFBA, #C5DDE8) fixed;
+    &::-webkit-scrollbar {
+        width: 0.25em;
+    }
+    &::-webkit-scrollbar-track {
+        background: #7fc3d4;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: #1e1e24;
+    }
+}
+
+@import "./nav_menu/_nav_menu.scss";
+@import "./navigation/_navigation.scss";
+
+.social {
+    margin-top: 30vh;
+    display: flex;
+    justify-content: center;
+    @import "./social/_social.scss";
+}
+
+.rainbow_button {
+    padding-top: 50px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    min-height: 10vh;
+    @import "./rainbow_button/_rainbow_button.scss";
+}
+
+
+//small
+@media only screen and (max-width: 600px){
+    main{
+        margin: 0;
+    }
+    html{
+        font-size: 12px;
+    }
+}
