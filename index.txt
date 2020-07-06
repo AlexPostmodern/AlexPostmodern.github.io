@@ -1,5 +1,0 @@
-<h1>Hello Git!</h1>
-version_1
-version_2
-version_3 (changes dev)
-version_4 (changes dev)
