@@ -301,7 +301,7 @@ body::-webkit-scrollbar-thumb {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 19rem;
+  font-size: 15vw;
   color: rgba(0, 0, 0, 0.1);
   z-index: -1;
   opacity: 0;
@@ -656,92 +656,95 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
+.container {
+  padding: 0 100px 0 100px;
+  display: block;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container:nth-child(5) {
+  height: 87vh;
+}
+
 .about h1,
 .projects h1,
 .hobby h1,
 .contact h1 {
   z-index: -1;
-  font-size: 16rem;
+  font-size: 11.8vw;
   text-transform: uppercase;
-  letter-spacing: 3rem;
-  text-align: right;
+  letter-spacing: 2vw;
   opacity: 0.7;
   -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
 }
 
-.about h1 span,
-.projects h1 span,
-.hobby h1 span,
-.contact h1 span {
-  opacity: 1;
+.about h2,
+.projects h2,
+.hobby h2,
+.contact h2 {
+  z-index: 1;
+  font-size: 11.8vw;
   color: #ed5565;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+  text-transform: uppercase;
+  display: inline-block;
+  opacity: 0.99;
+}
+
+.about h1 {
+  margin-left: 37vw;
 }
 
 .about h2 {
-  display: inline-block;
-  margin-top: -10rem;
-  margin-left: 86.3rem;
-  z-index: 1;
-  font-size: 16rem;
-  text-transform: uppercase;
-  letter-spacing: 3rem;
-  opacity: 0.99;
-  color: #ed5565;
-  -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+  margin-left: 63.2vw;
+  margin-top: -7vw;
+  letter-spacing: 2vw;
+}
+
+.projects h1 {
+  margin-left: 13vw;
 }
 
 .projects h2 {
-  display: inline-block;
-  margin-top: -8rem;
-  margin-left: 9.8rem;
-  z-index: 1;
-  font-size: 16rem;
-  text-transform: uppercase;
-  letter-spacing: 1.7rem;
-  opacity: 0.99;
-  color: #ed5565;
-  -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+  margin-top: -6vw;
+  margin-left: 9vw;
+  letter-spacing: 1.1vw;
+}
+
+.hobby h1 {
+  margin-left: 36vw;
+}
+
+.hobby h2 {
+  margin-left: 38.3vw;
+  margin-top: -7vw;
+  letter-spacing: 2vw;
+}
+
+.contact h1 {
+  margin-left: 19vw;
 }
 
 .contact h2 {
-  display: inline-block;
-  margin-top: -9rem;
-  margin-left: 91.8rem;
-  z-index: 1;
-  font-size: 16rem;
-  text-transform: uppercase;
-  letter-spacing: 2.6rem;
-  opacity: 0.99;
-  color: #ed5565;
-  -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+  margin-left: 67.4vw;
+  margin-top: -7vw;
+  letter-spacing: 1.7vw;
 }
 
 p {
   font-size: 2rem;
+  font: bold;
 }
 
 footer {
   height: 5vh;
+  width: 100vw;
 }
 
 footer p {
   text-align: center;
   letter-spacing: 0.5rem;
-}
-
-.container {
-  padding: 0 100px 0 100px;
-  display: block;
-  height: 100vh;
-  /*.about,.projects{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }*/
-}
-
-.container:nth-child(5) {
-  height: 87vh;
 }
 
 .about .text {

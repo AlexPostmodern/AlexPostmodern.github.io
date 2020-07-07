@@ -26,6 +26,7 @@ body {
     &::-webkit-scrollbar-thumb {
         background: #1e1e24;
     }
+    //scroll-snap-type: y mandatory;
 }
 
 @import "./nav_menu/_nav_menu.scss";
@@ -58,87 +59,102 @@ body {
     }
 }
 
+
+.container {
+    //scroll-snap-align: start;
+    //padding: 0 5vw 0 5vw;
+    //overflow: hidden;
+    padding: 0 100px 0 100px;
+    display: block;
+    height: 100vh;
+    width:100vw;
+    &:nth-child(5) {
+        height: 87vh;
+    }
+}
+
 .about h1,
 .projects h1,
 .hobby h1,
 .contact h1 {
     z-index: -1;
-    font-size: 16rem;
+    font-size: 11.8vw;
     text-transform: uppercase;
-    letter-spacing: 3rem;
-    text-align: right;
+    letter-spacing: 2vw;
     opacity: 0.7;
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
-    //-webkit-box-reflect: below 1px linear-gradient(transparent, #fff);
-    span {
-        opacity: 1;
-        color: #ed5565;
-    }
-}
-.about h2 {
-    display: inline-block;
-    margin-top: -10rem;
-    margin-left: 86.3rem;
-    z-index: 1;
-    font-size: 16rem;
-    text-transform: uppercase;
-    letter-spacing: 3rem;
     //text-align: right;
-    opacity: 0.99;
-    color: #ed5565;
-    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
-}
-.projects h2 {
-    display: inline-block;
-    margin-top: -8rem;
-    margin-left: 9.8rem;
-    z-index: 1;
-    font-size: 16rem;
-    text-transform: uppercase;
-    letter-spacing: 1.7rem;
-    //text-align: right;
-    opacity: 0.99;
-    color: #ed5565;
-    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+    //overflow: hidden;
 }
 
-.contact h2{
-    display: inline-block;
-    margin-top: -9rem;
-    margin-left: 91.8rem;
+.about h2,
+.projects h2,
+.hobby h2,
+.contact h2 {
     z-index: 1;
-    font-size: 16rem;
-    text-transform: uppercase;
-    letter-spacing: 2.6rem;
-    //text-align: right;
-    opacity: 0.99;
+    font-size: 11.8vw;
     color: #ed5565;
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+    text-transform: uppercase;
+    display: inline-block;
+    opacity: 0.99;
+    //text-align: right;
 }
+
+
+.about h1{
+    margin-left: 37vw;
+    //margin-right: 10vw;
+}
+
+.about h2 {  
+    margin-left: 63.2vw;  
+    margin-top: -7vw;
+    letter-spacing: 2vw;
+}
+
+.projects h1{
+    margin-left: 13vw;
+}
+.projects h2 {
+    margin-top: -6vw;
+    margin-left: 9vw;
+    letter-spacing: 1.1vw;
+}
+
+.hobby h1{
+    margin-left: 36vw;
+}
+.hobby h2{
+    margin-left: 38.3vw;  
+    margin-top: -7vw;
+    letter-spacing: 2vw;  
+}
+
+.contact h1{
+    margin-left: 19vw;
+}
+.contact h2{
+    margin-left: 67.4vw;  
+    margin-top: -7vw;
+    letter-spacing: 1.7vw;  
+}
+
 p {
     font-size: 2rem;
+    font: bold;
     //text-shadow: 0 0 .3rem .1rem #000;
 }
 footer {
     height: 5vh;
+    width: 100vw;
+    //overflow: hidden;
     p {
         text-align: center;
         letter-spacing: 0.5rem;
     }
 }
-.container {
-    padding: 0 100px 0 100px;
-    display: block;
-    height: 100vh;
-    &:nth-child(5) {
-        height: 87vh;
-    }
-    /*.about,.projects{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }*/
-}
+
 
 .about .text {
     margin-top: 2rem;
