@@ -15,7 +15,7 @@ buttonHome.onclick = () => {
     social.style.setProperty("--color-social", "rgb(83, 83, 83)")
     footer.style.color = "rgb(83, 83, 83)"
   }
-  body.style.background = "linear-gradient(90deg, #aea4e3, #d3ffe8) fixed"
+  body.style.background = "linear-gradient(90deg, #cfecd0, #a0c9ce, #9ec0db) fixed"
 }
 
 buttonAbout.onclick = () => {
@@ -23,7 +23,7 @@ buttonAbout.onclick = () => {
     social.style.setProperty("--color-social", "rgb(83, 83, 83)")
     footer.style.color = "rgb(83, 83, 83)"
   }
-  body.style.background = "linear-gradient(90deg, #cfecd0, #a0c9ce, #9ec0db) fixed"
+  body.style.background = "linear-gradient(90deg, #aea4e3, #d3ffe8) fixed"
 }
 
 buttonProjects.onclick = () => {

@@ -25,10 +25,10 @@
         box-shadow: 0 0 40px 30px #fff;
     }
     &:nth-child(6n+1) a::before{
-        background: linear-gradient(90deg, #aea4e3, #d3ffe8);
+        background: linear-gradient(90deg, #cfecd0, #a0c9ce, #9ec0db);
     }   
     &:nth-child(6n+2) a::before{
-        background: linear-gradient(90deg, #cfecd0, #a0c9ce, #9ec0db);
+        background: linear-gradient(90deg, #aea4e3, #d3ffe8);
     }
     &:nth-child(6n+3) a::before{
         /*background: linear-gradient(rgba(135, 60, 255, 0.4), rgba(135, 60, 255, 0.0) 80%),
